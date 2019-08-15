@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'DiaryController@index')->name('diary.index'); //追加
+// 削除
+// Route::get('/', function () {
+//     return view('welcome');
+// });
