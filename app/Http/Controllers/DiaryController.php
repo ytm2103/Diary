@@ -18,4 +18,10 @@ class DiaryController extends Controller
         // dd($diaries);  //var_dump()とdie()を合わせたメソッド。変数の確認 + 処理のストップ
         return view('diaries.index',['diaries' => $diaries]);   
     }
+
+    public function create()
+    {
+        // views/diaries/create.blade.phpを表示する
+        return view('diaries.create');
+    }
 }
