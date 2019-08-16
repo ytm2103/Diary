@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Diary;
+use App\Http\Requests\CreateDiary;
 use Illuminate\Http\Request;
 
 class DiaryController extends Controller
@@ -25,7 +26,7 @@ class DiaryController extends Controller
         return view('diaries.create');
     }
     // $request =リクエストの情報が入ったインスタンス
-    public function store(Request $request)
+    public function store(CreateDiary $request)
 {
     $diary = new Diary(); //Diaryモデルをインスタンス化
 
