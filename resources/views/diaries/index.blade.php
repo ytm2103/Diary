@@ -19,6 +19,7 @@
         </div>
     @endforeach
 <p>{{ $diary->created_at }}</p>
+<a class="btn btn-success" href="{{ route('diary.edit', ['id' => $diary->id]) }}">編集</a>
 <form action="{{ route('diary.destroy', ['id' => $diary->id]) }}" method="POST" class="d-inline">
     @csrf
     @method('delete')
