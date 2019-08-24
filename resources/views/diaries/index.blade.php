@@ -9,7 +9,7 @@
 </head>
 <body>
 
-@extends('layout')
+@extends('layouts.app')
 
 @section('title')
 一覧

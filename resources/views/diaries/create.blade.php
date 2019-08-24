@@ -8,6 +8,7 @@
     <title>新規投稿画面</title>
 </head>
 <body>
+@extends('layouts.app')
     <section class="container m-5">
         <div class="row justify-content-center">
             <div class="col-8">
